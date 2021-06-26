@@ -11,13 +11,19 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "ngx-html-highlighter": [
+        "dist/ngx-html-highlighter/ngx-html-highlighter",
+        "dist/ngx-html-highlighter"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
     ]
   },
