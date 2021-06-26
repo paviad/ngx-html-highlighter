@@ -21,3 +21,7 @@ export interface Options {
 
 * `tagAttribute` is the attribute name used to "tag" a node as having been inserted by the highlighter.
 * `highlightClass` is the class added to the highlighted spans. You should add styles to this class in your global stylesheets (e.g. `src/app/styles.css` in a default angular app)
+
+## Demo
+
+![Demo](/demo.gif)
