@@ -1,6 +1,19 @@
 {
   "name": "ngx-html-highlighter",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "homepage": "https://github.com/paviad/ngx-html-highlighter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paviad/ngx-html-highlighter.git"
+  },
+  "description": "A full page html text highlighter for Angular",
+  "license": "BSD-3-Clause",
+  "author": "Aviad Pineles <paviad2+highlighter@gmail.com>",
+  "keywords": [
+    "angular",
+    "highlighter",
+    "highlight"
+  ],
   "peerDependencies": {
     "@angular/common": "^12.0.5",
     "@angular/core": "^12.0.5"
