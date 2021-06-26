@@ -1,27 +1,23 @@
-# AngularHighlighter
+# NgxHtmlHighlighter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Install the library in your `package.json` for example using `npm i --save ngx-html-highlighter`.
+* Add the `NgxHtmlHighlighterModule.forRoot()` to your module's imports section. The `forRoot` is necessary for the service to be available (see next item).
+* Inject the `HighlighterService` in your module or component.
+* Call `createHighlighter` with an optional options argument to create a highlighter object. The highlighter begins its work immediately.
+* **Important:** When no longer needed call `destroy` on the highlighter object or alteratively pass the highlighter to the service's `destroyHighlighter` method.
 
-## Code scaffolding
+## Options
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```typescript
+export interface Options {
+  tagAttribute: string;
+  highlightClass: string;
+}
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* `tagAttribute` is the attribute name used to "tag" a node as having been inserted by the highlighter.
+* `highlightClass` is the class added to the highlighted spans. You should add styles to this class in your global stylesheets (e.g. `src/app/styles.css` in a default angular app)
