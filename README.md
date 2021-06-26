@@ -1,6 +1,6 @@
-# NgxHtmlHighlighter
+# Angular Html Highlighter
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+Highlight strings of text across the entire page, regardless of application, library or component boundaries.
 
 ## Usage
 
